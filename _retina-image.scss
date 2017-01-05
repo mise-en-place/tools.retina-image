@@ -15,20 +15,10 @@
 
 
 @mixin retina-image($dir, $name, $inline: true) {
-    @if $support-ie8 == false {
-        @if $inline{
-            background-image: image-url("#{$dir}/#{$name}.svg");
-        }
-        @else {
-            background-image: image-url("#{$dir}/#{$name}.svg");
-        }
-    }
-    @else {
-        @if $inline{
-            background-image: image-url("#{$dir}/#{$name}.png");
-        }
-        @else {
-            background-image: image-url("#{$dir}/#{$name}.png");
-        }
-    }
+      @if $inline{
+          background-image: image-url("#{$dir}/#{$name}.svg");
+      }
+      @else {
+          background-image: image-url("#{$dir}/#{$name}.svg");
+      }
 }
