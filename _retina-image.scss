@@ -1,17 +1,19 @@
 // ==========================================================================
-// RETINA IMAGE MIXIN
+// Retina Image Mixin
 // ==========================================================================
-//
-// This mixin adds SVG for certain modules (such as _logo.scss) if the
-// supports map in the /support directory is is set to true.
-//
-//
-// EXAMPLE
-//
-// .module {
-//    @include retina-image(logos, endsleigh);
-// }
-//
+
+////
+/// @group Mixins
+////
+
+/// This mixin adds SVG for certain modules (such as _logo.scss) if the supports map in the /support directory is is set to true.
+///
+/// @example scss - Basic Usage Sass
+///    .lots-of-pixels {
+///         @include retina-image(logos, endsleigh);
+///    }
+/// @example njk - HTML Output
+///    <a href="http://google.com" class="">This is an extraordinary long link lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem vero mollitia ad maiores magnam, adipisci dolore officiis doloribus, modi esse numquam! Corporis quod nihil, beatae architecto molestias! Vitae, officiis eum!</a>
 
 
 @mixin retina-image($dir, $name, $inline: true) {
